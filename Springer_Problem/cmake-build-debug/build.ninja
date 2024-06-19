@@ -1,0 +1,218 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: SemesterProjektWS2223
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target GraphLib
+
+
+#############################################
+# Order-only phony target for GraphLib
+
+build cmake_object_order_depends_target_GraphLib: phony || CMakeFiles/GraphLib.dir
+
+build CMakeFiles/GraphLib.dir/GraphLib/Node.cpp.o: CXX_COMPILER__GraphLib_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib/Node.cpp || cmake_object_order_depends_target_GraphLib
+  DEP_FILE = CMakeFiles/GraphLib.dir/GraphLib/Node.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/GraphLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/GraphLib.dir/GraphLib
+
+build CMakeFiles/GraphLib.dir/GraphLib/Edge.cpp.o: CXX_COMPILER__GraphLib_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib/Edge.cpp || cmake_object_order_depends_target_GraphLib
+  DEP_FILE = CMakeFiles/GraphLib.dir/GraphLib/Edge.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/GraphLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/GraphLib.dir/GraphLib
+
+build CMakeFiles/GraphLib.dir/GraphLib/Graph.cpp.o: CXX_COMPILER__GraphLib_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib/Graph.cpp || cmake_object_order_depends_target_GraphLib
+  DEP_FILE = CMakeFiles/GraphLib.dir/GraphLib/Graph.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/GraphLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/GraphLib.dir/GraphLib
+
+build CMakeFiles/GraphLib.dir/GraphLib/NodeExistsException.cpp.o: CXX_COMPILER__GraphLib_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib/NodeExistsException.cpp || cmake_object_order_depends_target_GraphLib
+  DEP_FILE = CMakeFiles/GraphLib.dir/GraphLib/NodeExistsException.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/GraphLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/GraphLib.dir/GraphLib
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target GraphLib
+
+
+#############################################
+# Link the static library libGraphLib.a
+
+build libGraphLib.a: CXX_STATIC_LIBRARY_LINKER__GraphLib_Debug CMakeFiles/GraphLib.dir/GraphLib/Node.cpp.o CMakeFiles/GraphLib.dir/GraphLib/Edge.cpp.o CMakeFiles/GraphLib.dir/GraphLib/Graph.cpp.o CMakeFiles/GraphLib.dir/GraphLib/NodeExistsException.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/GraphLib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libGraphLib.a
+  TARGET_PDB = GraphLib.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SemesterProjektWS2223
+
+
+#############################################
+# Order-only phony target for SemesterProjektWS2223
+
+build cmake_object_order_depends_target_SemesterProjektWS2223: phony || cmake_object_order_depends_target_GraphLib
+
+build CMakeFiles/SemesterProjektWS2223.dir/main.cpp.o: CXX_COMPILER__SemesterProjektWS2223_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/main.cpp || cmake_object_order_depends_target_SemesterProjektWS2223
+  DEP_FILE = CMakeFiles/SemesterProjektWS2223.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/SemesterProjektWS2223.dir
+  OBJECT_FILE_DIR = CMakeFiles/SemesterProjektWS2223.dir
+
+build CMakeFiles/SemesterProjektWS2223.dir/Chessboard.cpp.o: CXX_COMPILER__SemesterProjektWS2223_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/Chessboard.cpp || cmake_object_order_depends_target_SemesterProjektWS2223
+  DEP_FILE = CMakeFiles/SemesterProjektWS2223.dir/Chessboard.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/SemesterProjektWS2223.dir
+  OBJECT_FILE_DIR = CMakeFiles/SemesterProjektWS2223.dir
+
+build CMakeFiles/SemesterProjektWS2223.dir/Field.cpp.o: CXX_COMPILER__SemesterProjektWS2223_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/Field.cpp || cmake_object_order_depends_target_SemesterProjektWS2223
+  DEP_FILE = CMakeFiles/SemesterProjektWS2223.dir/Field.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/SemesterProjektWS2223.dir
+  OBJECT_FILE_DIR = CMakeFiles/SemesterProjektWS2223.dir
+
+build CMakeFiles/SemesterProjektWS2223.dir/Knight.cpp.o: CXX_COMPILER__SemesterProjektWS2223_Debug /Users/carlo/Projects/fap/SemesterProjektWS2223/Knight.cpp || cmake_object_order_depends_target_SemesterProjektWS2223
+  DEP_FILE = CMakeFiles/SemesterProjektWS2223.dir/Knight.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O0 -std=gnu++20
+  INCLUDES = -I/Users/carlo/Projects/fap/SemesterProjektWS2223/GraphLib
+  OBJECT_DIR = CMakeFiles/SemesterProjektWS2223.dir
+  OBJECT_FILE_DIR = CMakeFiles/SemesterProjektWS2223.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SemesterProjektWS2223
+
+
+#############################################
+# Link the executable SemesterProjektWS2223
+
+build SemesterProjektWS2223: CXX_EXECUTABLE_LINKER__SemesterProjektWS2223_Debug CMakeFiles/SemesterProjektWS2223.dir/main.cpp.o CMakeFiles/SemesterProjektWS2223.dir/Chessboard.cpp.o CMakeFiles/SemesterProjektWS2223.dir/Field.cpp.o CMakeFiles/SemesterProjektWS2223.dir/Knight.cpp.o | libGraphLib.a || libGraphLib.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = libGraphLib.a
+  OBJECT_DIR = CMakeFiles/SemesterProjektWS2223.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = SemesterProjektWS2223
+  TARGET_PDB = SemesterProjektWS2223.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug && "/Users/carlo/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug && "/Users/carlo/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/carlo/Projects/fap/SemesterProjektWS2223 -B/Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build GraphLib: phony libGraphLib.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug
+
+build all: phony libGraphLib.a SemesterProjektWS2223
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/carlo/Projects/fap/SemesterProjektWS2223/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/carlo/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/carlo/Projects/fap/SemesterProjektWS2223/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

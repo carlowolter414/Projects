@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SemesterProjektWS2223",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GraphLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GraphLib-Debug-74bc4c88a3f2225af75e.json",
+					"name" : "GraphLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SemesterProjektWS2223::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SemesterProjektWS2223-Debug-4a30aca7444f78af4c1c.json",
+					"name" : "SemesterProjektWS2223",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug",
+		"source" : "/Users/carlo/Projects/fap/SemesterProjektWS2223"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,4 @@
+/Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug/CMakeFiles/GraphLib.dir
+/Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug/CMakeFiles/SemesterProjektWS2223.dir
+/Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/carlo/Projects/fap/SemesterProjektWS2223/cmake-build-debug/CMakeFiles/rebuild_cache.dir

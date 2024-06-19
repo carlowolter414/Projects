@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libGraphLib.a CMakeFiles/GraphLib.dir/GraphLib/Node.cpp.o CMakeFiles/GraphLib.dir/GraphLib/Edge.cpp.o CMakeFiles/GraphLib.dir/GraphLib/Graph.cpp.o CMakeFiles/GraphLib.dir/GraphLib/NodeExistsException.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libGraphLib.a
